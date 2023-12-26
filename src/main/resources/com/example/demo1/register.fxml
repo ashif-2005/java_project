@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: EBE3D5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.registercontroller">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="574.0" style="-fx-background-color: #fff; -fx-background-radius: 20;">
+         <children>
+            <Pane layoutX="20.0" layoutY="22.0" prefHeight="330.0" prefWidth="267.0" style="-fx-background-color: F5E8C7; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="202.0" fitWidth="329.0" layoutX="-27.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@create-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="172.0" fitWidth="221.0" layoutX="21.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Text layoutX="328.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an Account">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#8c8080" layoutX="321.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Never a better time to get started">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#8c7e7e" layoutX="393.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Than now !">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="username" layoutX="314.0" layoutY="179.0" prefHeight="25.0" prefWidth="234.0" promptText="Username" style="-fx-background-color: transperent; -fx-border-color: #000; -fx-border-radius: 20;" />
+            <Button layoutX="398.0" layoutY="274.0" mnemonicParsing="false" onAction="#signupclicked" style="-fx-background-color: F5E8C7; -fx-border-color: #000; -fx-background-radius: 20; -fx-border-radius: 20;" text="Signup">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#7b7575" layoutX="366.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get Started  for FREE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="317.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alredy have an accunt ?" />
+            <Button layoutX="442.0" layoutY="315.0" mnemonicParsing="false" onAction="#loginclicked" style="-fx-background-color: transperent;" text="login" />
+            <PasswordField fx:id="password" layoutX="318.0" layoutY="226.0" prefHeight="25.0" prefWidth="234.0" promptText="Password" style="-fx-background-color: transperent; -fx-border-radius: 20; -fx-border-color: #000;" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
